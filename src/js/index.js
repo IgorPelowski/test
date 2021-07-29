@@ -1,5 +1,5 @@
 import '../scss/main.scss';
-
+document.addEventListener("DOMContentLoaded", function(){
 const slide = document.querySelector('.slider__images');
 const images = document.querySelectorAll('.slider__images .imgs');
 const dots = document.querySelectorAll('.slider__dots .dots');
@@ -64,3 +64,4 @@ slide.addEventListener('transitionend', ()=>{
     
 });
 
+});

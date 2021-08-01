@@ -29,7 +29,6 @@ buttonNext.addEventListener('click', ()=>{
 
     dots.forEach(dot => dot.style.color = 'white');
     dots[dotCount].style.color = 'yellow';
-    console.log(dotCount);  
 });
 
 buttonBack.addEventListener('click', ()=>{

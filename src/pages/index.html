@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
     <meta name="description" content="test" />
-    <!-- Title -->
     <meta property="og:title" content="test" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
     <meta property="og:description" content="test" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
     <meta property="og:url" content="https://igorpelowski.pl/test" />
     <link rel="stylesheet" href="https://use.typekit.net/rwv6voq.css" />
-
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+    
   </head>
   <body>
     <nav class="nav">
@@ -21,9 +17,14 @@
       <a href="" class="nav__item">II stopnia</a>
       <a href="" class="nav__item">Podyplomowe</a>
       <a href="" class="nav__item">Szkolenia</a>
-      <a href="" class="nav__item nav__item__last">usługi</a>
+      <a href="" class="nav__item nav__item__last">Usługi</a>
     </nav>
-    <div class="navBackground"><img src="../assets/img/UW-bialy@1X.png" class="slider__bialy navBackground__bialy" /></div>
+    <div class="navBackground">
+      <img
+        src="../assets/img/UW-bialy@1X.png"
+        class="slider__bialy navBackground__bialy"
+      />
+    </div>
     <section class="slider">
       <div class="slider__dots">
         <a class="slider__dot1 dots">⬤</a>
@@ -33,10 +34,7 @@
       </div>
 
       <img src="../assets/img/UW-bialy@1X.png" class="slider__bialy" />
-      <img
-        src="../assets/img/nawigacja1.png"
-        class="buttonNext"
-      />
+      <img src="../assets/img/nawigacja1.png" class="buttonNext" />
       <img src="../assets/img/nawigacja2.png" class="buttonBack" />
       <a class="slider__text1">Będziesz się uczyć z ciekawością.</a>
       <a class="slider__text2">Obiecujemy.</a>
@@ -114,13 +112,7 @@
     <section class="form">
       <a class="form__title">Nie znalazłeś odpowiedniego kontaktu?</a>
       <a class="form__title2"> Skorzystaj z formularza.</a>
-      <!-- <form>
-        <input class="form__name" type="text" placeholder="Imie">
-        <input class="form__surname" type="text" placeholder="Nazwisko">
-        <input class="form__email" type="email" placeholder="Email">
-        <textarea class="form__message" placeholder="Message..." rows="5"></textarea>
-      </form>
-      <button class="form__button"></button> -->
+
       <form class="input__container" action="/src/js/login.php" id="myForm">
         <div class="styled__input">
           <input type="text" name="inp_name" id="inp_name" required />
@@ -138,7 +130,13 @@
         </div>
 
         <div class="styled__input wide">
-          <textarea class="textarea" type="text" name="inp_text" id="inp_text" required></textarea>
+          <textarea
+            class="textarea"
+            type="text"
+            name="inp_text"
+            id="inp_text"
+            required
+          ></textarea>
           <label>Treść wiadomości</label>
         </div>
 
@@ -153,14 +151,12 @@
           zmiany oraz usunięcia.</label
         >
 
-        <div>
           <button type="submit" class="btn-lrg submit-btn">Wyślij</button>
-        </div>
       </form>
     </section>
     <footer class="footer">
       <a class="footer__adress"
-        >ul.Głogowska 10<br><br>61-719 Poznań<br><br>tel.61 27 11 000</a
+        >ul.Głogowska 10<br /><br />61-719 Poznań<br /><br />tel.61 27 11 000</a
       >
       <div class="footer__maps">
         <iframe
@@ -206,7 +202,7 @@
         <li><a href="">Studiuj dalej</a></li>
       </ul>
       <ul class="footer__list4">
-        <li><a href="">Dla biznesu1</a></li>
+        <li><a href="">Dla biznesu</a></li>
         <br />
         <li><a href="">Współpraca z biznesem</a></li>
         <br />

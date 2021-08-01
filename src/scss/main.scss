@@ -92,15 +92,20 @@ body {
   &__text1 {
     z-index: 10;
     color: white;
-    top: 50%;
+    top: 53%;
     left: 20%;
     font-size: 40px;
-
+    font-family: muli, sans-serif;
+    font-weight: 200;
+    font-style: normal;
     position: absolute;
   }
   &__text2 {
+    font-family: muli, sans-serif;
+    font-weight: 200;
+    font-style: normal;
     z-index: 10;
-    color: rgb(49, 109, 219);
+    color: rgb(25, 161, 202);
     top: 60%;
     left: 20%;
     font-size: 40px;
@@ -404,20 +409,21 @@ textarea {
 }
 
 .submit-btn {
-  justify-self: center;
-  align-self: center;
-  margin-left: 43%;
+  margin: auto;
+  display: block;
+  text-align: center;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 60px;
-  display: inline-block;
+  
   background-color: #00B6DC;
   color: white;
   font-size: 18px;
   cursor: pointer;
 }
+
 
 
 #scales{
@@ -506,39 +512,7 @@ a:-webkit-any-link {
     left:20%;
   }
 }
-
-@media (max-width:900px){
-  .slider{
-    width:100vw;
-    &__bialy {
-      position: absolute;
-      z-index: 10;
-      top: 3%;
-      left: 4%;
-      width: auto;
-      height: auto;
-      opacity: 0.5;
-    }
-    &__text1{
-      font-size: 30px;
-      top:26%;
-
-    }
-    &__text2{
-      top:40%;
-
-      font-size: 30px;
-    }
-    &__button1{
-      top:60%;
-    }
-    &__button2{
-      top:70%;
-      left: 20%;
-    }
-    
-
-  }
+@media (max-width:700px) {
   .nav {
     display: block;
     overflow: scroll;
@@ -571,6 +545,40 @@ a:-webkit-any-link {
       }
     }
   }
+}
+@media (max-width:900px){
+  .slider{
+    width:100vw;
+    &__bialy {
+      position: absolute;
+      z-index: 10;
+      top: 3%;
+      left: 4%;
+      width: auto;
+      height: auto;
+      opacity: 0.5;
+    }
+    &__text1{
+      font-size: 30px;
+      top:26%;
+
+    }
+    &__text2{
+      top:40%;
+
+      font-size: 30px;
+    }
+    &__button1{
+      top:60%;
+    }
+    &__button2{
+      top:70%;
+      left: 20%;
+    }
+    
+
+  }
+  
   .nav:hover{
     display: flex;
   }
@@ -583,6 +591,8 @@ a:-webkit-any-link {
     background-color: rgba(0, 0, 0, 0.486);
     &__bialy{
       padding-top: 2%;
+      width: 80px;
+      height: 88px;
     }
   }
   .scales{
@@ -598,9 +608,37 @@ a:-webkit-any-link {
   ul{
     padding-inline-start: 0px;
   }
+  .input__container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+    margin-top:30%;
+  
+  }
   .form{
+    padding-top:10%;
+
     &__textarea{
       padding: 0;
+      
+    }
+    &__title{
+      position: absolute;
+      text-align: center;
+      width: 100vw;
+      font-size: 25px;
+      margin-bottom: 100px;
+      
+      
+    }
+    &__title2{
+      position: absolute;
+      text-align: center;
+      width: 100vw;
+      font-size: 15px;
+      padding-top:15%;
+      color: #7B94A5;
+      
     }
   }
   input, textarea{

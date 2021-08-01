@@ -3,10 +3,11 @@
 
 @import "modules/hello.scss";
 body {
+  width: 100vw;
   font-family: muli, sans-serif;
 
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-weight: 500;
+  
   font-style: normal;
 }
 
@@ -441,7 +442,7 @@ textarea {
   background-color: #001927;
   font-size: 14px;
   height: 500px;
-  font-family: Muli-Regular,Muli-ExtraBold,AdobeInvisFont,MyriadPro-Regular;
+  font-family: Muli-Regular,Muli-ExtraBold;
 
   &__adress {
     grid-column: 3/5;
@@ -509,9 +510,113 @@ a:-webkit-any-link {
 @media (max-width:900px){
   .slider{
     width:100vw;
+    &__text1{
+      font-size: 30px;
+      top:28%;
+
+    }
+    &__text2{
+      top:40%;
+
+      font-size: 30px;
+    }
+    &__button1{
+      top:52%;
+    }
+    &__button2{
+      top:60%;
+      left: 20%;
+    }
+    
 
   }
+  .nav {
+    display: none;
+    width: 100%;
+    position: fixed;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    opacity: 0;
+    z-index: 5;
+    height: 80px;
+  
+    &__item {
+      padding-right: 3%;
+      height: 80px;
+      display: flex;
+      padding-top: 50px;
+      padding-left: 3%;
+      margin-top: 2%;
+      text-decoration: none;
+      list-style: none;
+      color: white;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.048);
+        transform: all 0.3s;
+      }
+  
+      &__last {
+        margin-right: 3%;
+      }
+    }
+  }
+  .nav:hover{
+    opacity: 1;
+  }
+  .navBackground{
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .scales{
+    width: auto;
+  }
+  .footer{
+    display: none;
+  }
+  .form{
+    &__textarea{
+      padding: 0;
+    }
+  }
+  input, textarea{
+    padding: 0px;
+  }
+  .main{
+    grid-template-rows: repeat(6, 100vh);
+    &__text1{
+      grid-row: 1;
+      grid-column: 1/12;
+    }
+    &__img1{
+      grid-row: 2;
+      grid-column: 1/12;
+
+    }
+
+    &__text2{
+      grid-row: 3;
+      grid-column: 1/12;
+
+    }
+    &__img2{
+      grid-row: 4;
+      grid-column: 1/12;
+
+
+    }
+    &__text3{
+      grid-row: 5;
+      grid-column: 1/12;
+        }
+    &__video{
+      grid-row: 6;
+      grid-column: 1/12;
+
+    }
+  }
 }
+
 
 
 

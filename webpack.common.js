@@ -11,6 +11,7 @@ module.exports = {
     filename: "[name].[hash:8].js",
     path: __dirname + "/dist",
   },
+  
   module: {
     rules: [
       {
@@ -42,6 +43,14 @@ module.exports = {
             ],
           },
         },
+      },
+      {
+        test: /\.php$/,
+        loader: [
+          'html-minify',
+          'php-loader'
+        ],
+        
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,

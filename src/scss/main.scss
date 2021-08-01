@@ -1,6 +1,6 @@
 @import "~normalize.css";
 
-@import "_variables";
+
 @import "modules/hello.scss";
 body {
   font-family: muli, sans-serif;
@@ -394,7 +394,7 @@ textarea {
   min-height: 15em;
 }
 
-.input-container {
+.input__container {
   width: 650px;
   max-width: 100%;
   margin: 20px auto 25px auto;
@@ -441,6 +441,7 @@ textarea {
   background-color: #001927;
   font-size: 14px;
   height: 500px;
+  font-family: Muli-Regular,Muli-ExtraBold,AdobeInvisFont,MyriadPro-Regular;
 
   &__adress {
     grid-column: 3/5;
@@ -467,20 +468,19 @@ textarea {
     list-style-type: none;
     width: 100%;
     grid-row: 2/4;
-    grid-column: 10/12;
+    grid-column: 9/11;
   }
   &__list4 {
     list-style-type: none;
     width: 100%;
     grid-row: 2/4;
-    grid-column: 12/14;
+    grid-column: 11/13;
   }
   &__list5 {
     list-style-type: none;
     width: 100%;
     grid-row: 2/4;
-    grid-column: 15/16;
-    grid-column-gap: 10px;
+    grid-column: 13/14;
   }
   &__signature {
     grid-column: 12/16;
@@ -503,6 +503,13 @@ a:-webkit-any-link {
   }
   .buttonNext{
     left:20%;
+  }
+}
+
+@media (max-width:900px){
+  .slider{
+    width:100vw;
+
   }
 }
 

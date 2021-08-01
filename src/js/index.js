@@ -1,16 +1,16 @@
 import '../scss/main.scss';
-document.addEventListener("DOMContentLoaded", function(){
+
+
+
 const slide = document.querySelector('.slider__images');
 const images = document.querySelectorAll('.slider__images .imgs');
 const dots = document.querySelectorAll('.slider__dots .dots');
-// const dot2 = document.querySelector('.slider__dot2');
-// const dot3 = document.querySelector('.slider__dot3');
-// const dot4 = document.querySelector('.slider__dot4');
-// let dots = [dots];
+
 const buttonNext = document.querySelector('.buttonNext');
 const buttonBack = document.querySelector('.buttonBack');
 let dotCount = 0;
 let count = 1;
+
 const size = images[0].clientWidth;
 
 slide.style.transform = 'translateX(' + (-size * count) + 'px)';
@@ -63,5 +63,30 @@ slide.addEventListener('transitionend', ()=>{
     }
     
 });
+
+
+const myForm = document.getElementById('myForm');
+
+myForm.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const searchParams = new URLSearchParams();
+
+    for (const pair of formData){
+        searchParams.append(pair[0], pair[1],pair[3],pair[4],pair[5]);
+    }
+
+    fetch('login.php', {
+        method: 'post',
+        body: searchParams
+    }).then(function (response){
+        return response.text();
+    }).then(function(text){
+        console.log(text);
+    }).catch(function (error){
+        console.error(error);
+    })
+
 
 });

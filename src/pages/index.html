@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>Test</title>
+    <meta name="description" content="test" />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="test" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="test" />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://igorpelowski.pl/test" />
     <link rel="stylesheet" href="https://use.typekit.net/rwv6voq.css" />
 
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
@@ -104,7 +104,7 @@
       </div>
       <iframe
         class="main__video"
-        src="https://www.youtube.com/embed/-tbBe6DQv6M"
+        src="https://www.youtube.com/embed/Gx543KbuGFY"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -121,24 +121,24 @@
         <textarea class="form__message" placeholder="Message..." rows="5"></textarea>
       </form>
       <button class="form__button"></button> -->
-      <div class="row input-container">
+      <form class="input__container" action="/src/js/login.php" id="myForm">
         <div class="styled__input">
-          <input type="text" required />
+          <input type="text" name="inp_name" id="inp_name" required />
           <label>Imie</label>
         </div>
 
         <div class="styled__input" style="float: right">
-          <input type="text" required />
+          <input type="text" name="inp_surname" id="inp_surname" required />
           <label>Nazwisko</label>
         </div>
 
         <div class="styled__input wide">
-          <input type="text" required />
+          <input type="text" name="inp_email" id="inp_email" required />
           <label>Adres e-mail</label>
         </div>
 
         <div class="styled__input wide">
-          <textarea required></textarea>
+          <textarea type="text" name="inp_text" id="inp_text" required></textarea>
           <label>Treść wiadomości</label>
         </div>
 
@@ -154,9 +154,9 @@
         >
 
         <div>
-          <div class="btn-lrg submit-btn">Wyślij</div>
+          <button type="submit" class="btn-lrg submit-btn">Wyślij</button>
         </div>
-      </div>
+      </form>
     </section>
     <footer class="footer">
       <a class="footer__adress"
